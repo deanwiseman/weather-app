@@ -28,12 +28,9 @@ const DisplayWeather = () => {
                     lon: longitude,
                     lat: latitude,
                     product: 'civil',
-                    output: 'json',
-                    tzshift: -1
+                    output: 'json'
                 }
             });
-
-            console.log(data);
 
             // splitting data into 8x8 until I find a better solution
 
@@ -83,8 +80,7 @@ const DisplayWeather = () => {
                         onClick={onChangeDayPrev}
                         className="change-prev"
                     >
-                        <label>&#8249;</label>
-                        
+                        &#8249;                       
                     </button>
                 :   <div
                         className="empty-button-left"
@@ -99,8 +95,7 @@ const DisplayWeather = () => {
                         onClick={onChangeDayNext}
                         className="change-next"
                     >
-                        <label>&#8250;</label>
-                    
+                       &#8250;               
                     </button>
                 :   <div
                         className="empty-button-right"
